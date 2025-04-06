@@ -1,12 +1,79 @@
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Thank you for subscribing to Lawreay IT!");
-});
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 
-document.querySelectorAll("nav ul li a").forEach(link => {
-    link.addEventListener("click", function(event) {
-        event.preventDefault();
-        const section = document.querySelector(link.getAttribute("href"));
-        section.scrollIntoView({ behavior: "smooth" });
-    });
-});
+/* 🔹 Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #0073e6;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* 🔹 Hero Section */
+#hero {
+    padding: 100px 20px;
+    background: linear-gradient(to right, #0073e6, #00aaff);
+    color: white;
+}
+
+button {
+    background-color: white;
+    color: #0073e6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* 🔹 Features Section */
+#features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+/* 🔹 Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
